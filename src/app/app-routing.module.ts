@@ -6,12 +6,16 @@ import { MapComponent } from './View/map/map.component';
 import { ReporteGeneralComponent } from './View/reporte-general/reporte-general.component';
 import { NewsComponent } from './View/news/news.component';
 import { InformationComponent } from './View/information/information.component';
+import { ServiciosListaComponent } from './servicios-lista/servicios-lista.component';
 
 const routes: Routes = [
   {
     path: '',
     component: MainComponent,
     children: [
+      {
+        path: "servicios-lista",component: ServiciosListaComponent
+      },
       {
         path: "reporte-general",component: ReporteGeneralComponent
       },
